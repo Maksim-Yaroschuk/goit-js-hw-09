@@ -1,3 +1,4 @@
+import Notiflix from 'notiflix';
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 
@@ -16,7 +17,7 @@ const options = {
       if (selectedDates[0] > fp.now) {
           startBtn.removeAttribute("disabled")
       } else {
-          window.alert("Please choose a date in the future")
+          Notiflix.Report.failure('Error!!!', 'Please choose a date in the future', 'OK');
       }
   },
 };
