@@ -16,20 +16,3 @@ img {
   display: block;
   max-width: 100%;
 }
-
-.timer {
-  margin-top: 10px;
-  display: flex;
-}
-
-.field {
- font-weight: 500;
-  display: grid;
-  text-transform: uppercase;
-  padding: 5px;
-  text-align: center;
-}
-
-.value {
-  font-size: 30px
-}
